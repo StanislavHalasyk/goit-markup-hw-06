@@ -64,7 +64,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="mobile-menu is-open" data-menu>
+            <div class="mobile-menu" data-menu>
                 <div class="container mobile-menu-container">
                     <button class="mobile-menu-close" data-menu-close>
                         <svg
@@ -175,10 +175,13 @@
         </header>
         <main>
             <section class="hero hero-section">
-                <div class="burger-btn" type="button">
-                    <svg class="burger-icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-heroicons"></use>
-                    </svg>
+                <div class="container">
+                    <h1 class="hero-title">
+                        Effective Solutions for Your Business
+                    </h1>
+                    <button class="hero-btn" type="button">
+                        Order Service
+                    </button>
                 </div>
             </section>
             <section class="advantages section">
@@ -934,9 +937,9 @@
 
         <!-- MODAL -->
 
-        <div class="backdrop is-open">
+        <div class="backdrop container-backdrop" data-modal-open>
             <div class="modal">
-                <button type="button" class="modal-close">
+                <button type="button" class="modal-close" data-modal-close>
                     <svg class="modal-close-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-vector"></use>
                     </svg>
@@ -1037,10 +1040,13 @@
                                     <use
                                         href="./images/icons.svg#icon-arrow"
                                     ></use>
-                                </svg> </span
-                            >I accept the terms and conditions of the&nbsp;
-                            <a href="" class="checkbox-element-accent"
-                                >Privacy Policy</a
+                                </svg>
+                            </span>
+                            <span class="checkbox-element-right"
+                                >I accept the terms and conditions of the&nbsp;
+                                <a href="" class="checkbox-element-accent"
+                                    >Privacy Policy</a
+                                ></span
                             ></label
                         >
                     </div>
