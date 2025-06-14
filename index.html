@@ -58,22 +58,127 @@
                         </li>
                     </ul>
                 </address>
-                <div class="burger-btn" type="button">
+                <div class="burger-btn" type="button" data-menu-open>
                     <svg class="burger-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-heroicons"></use>
                     </svg>
                 </div>
             </div>
+            <div class="mobile-menu is-open" data-menu>
+                <div class="container mobile-menu-container">
+                    <button class="mobile-menu-close" data-menu-close>
+                        <svg
+                            class="mobile-menu-close-icon"
+                            width="8"
+                            height="8"
+                        >
+                            <use href="./images/icons.svg#icon-vector"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-navigation">
+                        <ul class="mobile-navigation-list">
+                            <li class="mobile-navigation-list-item">
+                                <a
+                                    href=""
+                                    class="mobile-navigation-list-link current"
+                                    >Studio</a
+                                >
+                            </li>
+                            <li class="mobile-navigation-list-item">
+                                <a href="" class="mobile-navigation-list-link"
+                                    >Portfolio</a
+                                >
+                            </li>
+                            <li class="mobile-navigation-list-item">
+                                <a href="" class="mobile-navigation-list-link"
+                                    >Contacts</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="mobile-adress">
+                        <ul class="mobile-adress-list">
+                            <li class="mobile-adress-list-item">
+                                <a
+                                    class="mobile-adress-list-link"
+                                    href="tel:+110001111111"
+                                    class="mobile-list-link"
+                                    >+11 (000) 111-11-11</a
+                                >
+                            </li>
+                            <li class="mobile-adress-list-item">
+                                <a
+                                    class="mobile-adress-list-link"
+                                    href="mailto:info@devstudio.com"
+                                    class="mobile-list-link"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="mobile-list">
+                        <li class="mobile-list-item">
+                            <a class="mobile-list-link" href="">
+                                <svg
+                                    class="team-social-svg"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-list-item">
+                            <a class="mobile-list-link" href="">
+                                <svg
+                                    class="team-social-svg"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-list-item">
+                            <a class="mobile-list-link" href="">
+                                <svg
+                                    class="team-social-svg"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-list-item">
+                            <a class="mobile-list-link" href="">
+                                <svg
+                                    class="team-social-svg"
+                                    width="16"
+                                    height="16"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <main>
             <section class="hero hero-section">
-                <div class="container">
-                    <h1 class="hero-title">
-                        Effective Solutions for Your Business
-                    </h1>
-                    <button class="hero-btn" type="button">
-                        Order Service
-                    </button>
+                <div class="burger-btn" type="button">
+                    <svg class="burger-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-heroicons"></use>
+                    </svg>
                 </div>
             </section>
             <section class="advantages section">
@@ -169,7 +274,11 @@
                         <li class="team-list-item">
                             <img
                                 class="team-list-image"
-                                src="./images/mark.jpg"
+                                srcset="
+                                    ./images/team/mark.jpg    1x,
+                                    ./images/team/mark@2x.jpg 2x
+                                "
+                                src="./images/team/mark.jpg"
                                 alt="our team"
                                 width="264"
                             />
@@ -235,7 +344,11 @@
                         <li class="team-list-item">
                             <img
                                 class="team-list-image"
-                                src="./images/tom.jpg"
+                                srcset="
+                                    ./images/team/tom.jpg    1x,
+                                    ./images/team/tom@2x.jpg 2x
+                                "
+                                src="./images/team/tom.jpg"
                                 alt="our team"
                                 width="264"
                             />
@@ -301,7 +414,11 @@
                         <li class="team-list-item">
                             <img
                                 class="team-list-image"
-                                src="./images/camila.jpg"
+                                srcset="
+                                    ./images/team/camila.jpg    1x,
+                                    ./images/team/camila@2x.jpg 2x
+                                "
+                                src="./images/team/camila.jpg"
                                 alt="out team"
                                 width="264"
                             />
@@ -367,7 +484,11 @@
                         <li class="team-list-item">
                             <img
                                 class="team-list-image"
-                                src="./images/daniel.jpg"
+                                srcset="
+                                    ./images/team/daniel.jpg    1x,
+                                    ./images/team/daniel@2x.jpg 2x
+                                "
+                                src="./images/team/daniel.jpg"
                                 alt="our team"
                                 width="264"
                             />
@@ -439,12 +560,35 @@
                     <ul class="portfolio-list">
                         <li class="portfolio-list-item">
                             <div class="portfolio-img-box">
-                                <img
-                                    class="portfolio-list-image"
-                                    src="./images/img1.jpg"
-                                    alt="Our Portfolio"
-                                    width="360"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img1-desctop-min.jpg    1x,
+                                            ./images/portfolio/img1-desctop@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 1158px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img1-tablet-min.jpg    1x,
+                                            ./images/portfolio/img1-tablet@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img1-mobile-min.jpg    1x,
+                                            ./images/portfolio/img1-mobile@2x-min.jpg 2x
+                                        "
+                                        media="(max-width: 768px)"
+                                    />
+                                    <img
+                                        class="portfolio-list-image"
+                                        alt="Our Portfolio"
+                                        width="360"
+                                    />
+                                </picture>
+
                                 <p class="portfolio-cover-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -462,12 +606,36 @@
                         </li>
                         <li class="portfolio-list-item">
                             <div class="portfolio-img-box">
-                                <img
-                                    class="portfolio-list-image"
-                                    src="./images/img2.jpg"
-                                    alt="Our Portfolio"
-                                    width="360"
-                                />
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img2-desctop-min.jpg    1x,
+                                            ./images/portfolio/img2-desctop@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 1158px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img2-tablet-min.jpg    1x,
+                                            ./images/portfolio/img2-tablet@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img2-mobile-min.jpg    1x,
+                                            ./images/portfolio/img2-mobile@2x-min.jpg 2x
+                                        "
+                                        media="(max-width: 768px)"
+                                    />
+                                    <img
+                                        class="portfolio-list-image"
+                                        src="./images/portfolio/img1.jpg"
+                                        alt="Our Portfolio"
+                                        width="360"
+                                    />
+                                </picture>
+
                                 <p class="portfolio-cover-text">
                                     14 Stylish and User-Friendly App Design
                                     Concepts · Task Manager App · Calorie
@@ -485,9 +653,32 @@
                         </li>
                         <li class="portfolio-list-item">
                             <div class="portfolio-img-box">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img3-desctop-min.jpg    1x,
+                                            ./images/portfolio/img3-desctop@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 1158px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img3-tablet-min.jpg    1x,
+                                            ./images/portfolio/img3-tablet@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img3-mobile-min.jpg    1x,
+                                            ./images/portfolio/img3-mobile@2x-min.jpg 2x
+                                        "
+                                        media="(max-width: 768px)"
+                                    />
+                                </picture>
                                 <img
                                     class="portfolio-list-image"
-                                    src="./images/img3.jpg"
+                                    src="./images/portfolio/img3.jpg"
                                     alt="Our Portfolio"
                                     width="360"
                                 />
@@ -508,9 +699,32 @@
                         </li>
                         <li class="portfolio-list-item">
                             <div class="portfolio-img-box">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img4-desctop-min.jpg    1x,
+                                            ./images/portfolio/img4-desctop@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 1158px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img4-tablet-min.jpg    1x,
+                                            ./images/portfolio/img4-tablet@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img4-mobile-min.jpg    1x,
+                                            ./images/portfolio/img4-mobile@2x-min.jpg 2x
+                                        "
+                                        media="(max-width: 768px)"
+                                    />
+                                </picture>
                                 <img
                                     class="portfolio-list-image"
-                                    src="./images/img4.jpg"
+                                    src="./images/portfolio/img4.jpg"
                                     alt="Our Portfolio"
                                     width="360"
                                 />
@@ -531,9 +745,32 @@
                         </li>
                         <li class="portfolio-list-item">
                             <div class="portfolio-img-box">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img5-desctop-min.jpg    1x,
+                                            ./images/portfolio/img5-desctop@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 1158px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img5-tablet-min.jpg    1x,
+                                            ./images/portfolio/img5-tablet@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img5-mobile-min.jpg    1x,
+                                            ./images/portfolio/img5-mobile@2x-min.jpg 2x
+                                        "
+                                        media="(max-width: 768px)"
+                                    />
+                                </picture>
                                 <img
                                     class="portfolio-list-image"
-                                    src="./images/img5.jpg"
+                                    src="./images/portfolio/img5.jpg"
                                     alt="Our Portfolio"
                                     width="360"
                                 />
@@ -554,9 +791,32 @@
                         </li>
                         <li class="portfolio-list-item">
                             <div class="portfolio-img-box">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img6-desctop-min.jpg    1x,
+                                            ./images/portfolio/img6-desctop@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 1158px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img6-tablet-min.jpg    1x,
+                                            ./images/portfolio/img6-tablet@2x-min.jpg 2x
+                                        "
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="
+                                            ./images/portfolio/img6-mobile-min.jpg    1x,
+                                            ./images/portfolio/img6-mobile@2x-min.jpg 2x
+                                        "
+                                        media="(max-width: 768px)"
+                                    />
+                                </picture>
                                 <img
                                     class="portfolio-list-image"
-                                    src="./images/img6.jpg"
+                                    src="./images/portfolio/img6.jpg"
                                     alt="Our Portfolio"
                                     width="360"
                                 />
@@ -674,7 +934,7 @@
 
         <!-- MODAL -->
 
-        <div class="backdrop">
+        <div class="backdrop is-open">
             <div class="modal">
                 <button type="button" class="modal-close">
                     <svg class="modal-close-icon" width="8" height="8">
@@ -788,5 +1048,8 @@
                 </form>
             </div>
         </div>
+
+        <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
